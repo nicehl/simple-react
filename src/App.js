@@ -1,15 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>WOW! awesome! Welcome to my test app!</h1>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  
+  constructor (props) {
+    super(props);
+    this.state = {
+      customTitle: 'Changed Title',
+      originTitle: 'Origin Title',
+      isChanged: false
+    }
+  };
+
+  onChangeTitle= (e) => {
+    this.setState({
+      isChanged: !this.state.isChanged,
+    })
+  };
+
+  render () {
+    const {customTitle, originTitle, isChanged} = this.state;
+  
+    return (
+      <div className="App">
+        <Header title={isChanged ? customTitle : originTitle}></Header>
+        <button onClick={this.onChangeTitle}>Change Title</button>
+      </div>
+    );
+  };
 }
 
 export default App;
