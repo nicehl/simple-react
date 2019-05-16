@@ -1,0 +1,83 @@
+@import '../base/variable.scss';
+
+.header {
+    background-color: white;
+    line-height: 70px;
+    padding: 0px 60px;
+    height: 70px;
+    color: $font-color;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    box-shadow: 0 1px 6px rgba(0,0,0,.3);
+    &__title {
+        font-size: 28px;
+        font-family: 'Raleway', sans-serif;
+        float: left;
+    }
+    &__btn-action {
+        position: absolute;
+        bottom: -30px;
+        right: 60px;
+        z-index: 99;
+        background-color: $primary-color;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: white;
+        font-size: 32px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        line-height: 60px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,.13), 0 6px 10px rgba(0,0,0,.3);
+    }
+    &__btn-menu {
+        display: none;
+        float: right;
+        text-decoration: none;
+        margin-right: 110px;
+    }
+    .nav-main {
+        float: right;
+        padding-right: 50px;
+        .list-unstyled {
+            padding-left: 0px;
+            list-style: none;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            li {
+                padding: 0px;
+                display: inline-block;
+                margin-left: -4px;
+                margin-bottom: 0px;
+                a {
+                    padding: 0 20px;
+                    display: inline-block;
+                    line-height: 70px;
+                    cursor: pointer;
+                    height: 70px;
+                    border-bottom: 5px solid transparent;
+                }
+                a:hover {
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+	.header {
+		padding: 0 12px;
+	}
+	.nav-main {
+		display: none;
+	}
+	.header__btn-menu {
+		display: inline-block;
+    }
+    .header__btn-action {
+        right: 12px;
+    }
+}
