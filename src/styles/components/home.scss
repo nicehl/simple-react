@@ -1,0 +1,61 @@
+@import '../base/variable.scss';
+
+.section-Home {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 72px 12px;
+    height: auto;
+    overflow: hidden;
+    position: static;
+    word-wrap: break-word;
+    padding-bottom: 0px;
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 683px;
+        h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin-top: 0;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            color: $font-color;
+        }
+        .btn-container {
+            display: flex;
+            text-transform: uppercase;
+            .btn {
+                font-size: 15px;
+                line-height: 26px;
+                padding: 11px 29px;
+                border: none;
+                border-radius: 3px;
+                margin-right: 32px;
+                box-shadow: 0 2px 2px rgba(0,0,0,.3);
+                text-align: center;
+                margin-bottom: 32px;
+            }
+            .btn__white {
+                background-color: white;
+                color: $font-color;
+            }
+            .btn__purple {
+                background-color: $primary-color;
+                color: white;
+            }
+        }
+    }
+    .img-section {
+        max-width: 487px;
+        &__img-responsive {
+            display: block;
+            max-height: 650px;
+            margin: 0 auto;
+            height: auto;
+        }
+    }
+}
