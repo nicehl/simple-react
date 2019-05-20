@@ -11,6 +11,10 @@
     max-width: 248px;
     max-height: 905px;
   }
+
+  h3 {
+    min-width: 100%;
+  }
   .info-section {
     &__name {
         margin-bottom: 6px;
@@ -71,4 +75,9 @@
       }
     }
   }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
