@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BlogComponent from '../components/blogComponent';
+import BlogComponent from '../components/blog';
 
 export default class BlogContainer extends React.Component {
   render () {

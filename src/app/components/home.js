@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
 import '../../styles/components/home.scss';
-import man from '../../assets/image/man.png';
 
 export default class HomeComponent extends React.Component {
   render () {
@@ -16,7 +15,7 @@ export default class HomeComponent extends React.Component {
           </div>
         </div>
         <div className="col-md-5 img-section">
-          <img src={man} alt="man" className="img-section__img-responsive" />
+          <img src="/assets/image/man.png" alt="man" className="img-section__img-responsive" />
         </div>
       </div>
     );

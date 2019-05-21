@@ -1,7 +1,9 @@
 import React from 'react';
-import Header from './containers/headerContainer';
 import Routes from './router';
-// import Footer from './containers/footerContainer';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Header from './containers/header';
+import Footer from './containers/footer';
 
 class App extends React.Component {
   
@@ -18,9 +20,11 @@ class App extends React.Component {
   render () {  
     return (
       <div>
-        <Header />
-        <Routes />
-        {/* <Footer /> */}
+        <Router>
+          <Header />
+          <Routes />
+          <Footer />
+        </Router>
       </div>
     );
   }

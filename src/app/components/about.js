@@ -2,8 +2,6 @@
 import React from 'react';
 
 import '../../styles/components/about.scss';
-import man2 from '../../assets/image/man2.png';
-import signature from '../../assets/image/signature.png';
 
 export default class AboutComponent extends React.Component {
   render () {
@@ -12,13 +10,13 @@ export default class AboutComponent extends React.Component {
         <div className="container">
           <h3>About Me</h3>
           <div className="col-md-3">
-            <img src={man2} className="section-aboutme__image" alt="man" />
+            <img src="/assets/image/man2.png" className="section-aboutme__image" alt="man" />
           </div>
           <div className="col-md-9 info-section">
             <h4 className="info-section__name">Benjamin Thomson</h4>
             <h5>Web &amp; UX Designer</h5>
             <p>Ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque latu dantium, totam rem aperiam, eaque ipsa quae ab illo tempor dignissim at. </p>
-            <div className="signature"><img src={signature} alt="signature" className="img-responsive" /></div>
+            <div className="signature"><img src="/assets/image/signature.png" alt="signature" className="img-responsive" /></div>
             <ul className="list-unstyled text-uppercase">
               <li><b>Date Of Birth:</b> 24 Jan 1989</li>
               <li><b>Phone:</b> 012-345-6789</li>

@@ -1,0 +1,54 @@
+@import '../base/variable.scss';
+
+.footer {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+
+  .top {
+    background-color: $font-color;
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      padding: 15px 0;
+      margin: auto 0;
+
+      .row {
+        width: 100%;
+
+        .social-icons {
+          margin-bottom: 24px;
+
+          &__icon {
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 16px;
+            color: #232323;
+            background: #fff;
+            border-radius: 100%;
+            box-shadow: 0 4px 12px rgba(0,0,0,.13);
+            margin: 0 4px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    background-color: #1c1c1c;
+    line-height: 50px;
+  }
+
+  h4, p {
+    margin-bottom: 24px;
+  }
+  
+  h4 {
+    text-transform: uppercase;
+  }
+}

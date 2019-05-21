@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SkillComponent from '../components/skillComponent';
+import SkillComponent from '../components/skill';
 
 export default class SkillContainer extends React.Component {
   render () {
