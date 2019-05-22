@@ -2,11 +2,10 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import '../../styles/components/header.scss';
-import { withRouter } from 'react-router';
 
 import NavLink from './navLink';
 
-class HeaderComponent extends React.Component {
+export default class HeaderComponent extends React.Component {
 
   render () {
     const { location } = this.props;
@@ -31,5 +30,3 @@ class HeaderComponent extends React.Component {
     );
   }
 }
-
-export default withRouter(HeaderComponent);

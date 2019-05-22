@@ -19,13 +19,11 @@ class App extends React.Component {
 
   render () {  
     return (
-      <div>
-        <Router>
-          <Header />
-          <Routes />
-          <Footer />
-        </Router>
-      </div>
+      <Router>
+        <Header />
+        <Routes />
+        <Footer />
+      </Router>
     );
   }
 }

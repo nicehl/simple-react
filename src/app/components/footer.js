@@ -3,7 +3,7 @@
 import React from 'react';
 import '../../styles/components/footer.scss';
 
-class FooterComponent extends React.Component {
+export default class FooterComponent extends React.Component {
 
   render () {
     return (
@@ -38,4 +38,3 @@ class FooterComponent extends React.Component {
   }
 }
 
-export default FooterComponent;

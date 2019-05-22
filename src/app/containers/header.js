@@ -1,11 +1,15 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 import HeaderComponent from '../components/header';
 
-export default class HeaderContainer extends React.Component {
+class HeaderContainer extends React.Component {
   render () {
+    const { location } = this.props;
     return (
-      <HeaderComponent />
+      <HeaderComponent location={location} />
     );
   }
 }
+
+export default withRouter(HeaderContainer);
