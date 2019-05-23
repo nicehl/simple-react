@@ -5,6 +5,8 @@ import '../../styles/components/about.scss';
 
 export default class AboutComponent extends React.Component {
   render () {
+    const { profile } = this.props;
+
     return (
       <div className="section-aboutme">
         <div className="container">
@@ -13,16 +15,16 @@ export default class AboutComponent extends React.Component {
             <img src="/assets/image/man2.png" className="section-aboutme__image" alt="man" />
           </div>
           <div className="col-md-9 info-section">
-            <h4 className="info-section__name">Benjamin Thomson</h4>
-            <h5>Web &amp; UX Designer</h5>
-            <p>Ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque latu dantium, totam rem aperiam, eaque ipsa quae ab illo tempor dignissim at. </p>
+            <h4 className="info-section__name">{profile.name}</h4>
+            <h5>{profile.title}</h5>
+            <p>{profile.description}</p>
             <div className="signature"><img src="/assets/image/signature.png" alt="signature" className="img-responsive" /></div>
             <ul className="list-unstyled text-uppercase">
-              <li><b>Date Of Birth:</b> 24 Jan 1989</li>
-              <li><b>Phone:</b> 012-345-6789</li>
-              <li><b>Email:</b> Sility@example.com</li>
-              <li><b>Address:</b> 123 Sility, South Corner Street, Melborne, Australia.</li>
-              <li><b>Website:</b> http://www.example.com</li>
+              <li><b>Date Of Birth:</b> {profile.dob}</li>
+              <li><b>Phone:</b> {profile.phone}</li>
+              <li><b>Email:</b> {profile.email}</li>
+              <li><b>Address:</b> {profile.address}</li>
+              <li><b>Website:</b> {profile.website}</li>
             </ul>
             <h3 className="todoHeader">What I'm Doing</h3>
             <div className="row">

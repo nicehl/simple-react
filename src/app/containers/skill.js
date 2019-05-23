@@ -1,11 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import SkillComponent from '../components/skill';
 
-export default class SkillContainer extends React.Component {
+class SkillContainer extends React.Component {
   render () {
+    const { percents } = this.props;
     return (
-      <SkillComponent />
+      <SkillComponent percents={percents}/>
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    percents: state.skill.percent
+  };
+};
+
+export default connect(mapStateToProps, null)(SkillContainer);

@@ -8,11 +8,11 @@ import NavLink from './navLink';
 export default class HeaderComponent extends React.Component {
 
   render () {
-    const { location } = this.props;
+    const { location, togglePlugBtn } = this.props;
     return (
       <header className="header">
         <div className="header__title"><a href="./index.html">Sility</a></div>
-        <a href="" className="header__btn-action">+</a>
+        <button className="header__btn-action" onClick={togglePlugBtn}>+</button>
         <a href="" className="header__btn-menu">Menu <i className="fa fa-bars"></i></a>
         <nav className="nav-main">
           <ul className="list-unstyled">

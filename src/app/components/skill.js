@@ -3,6 +3,7 @@ import '../../styles/components/skill.scss';
 
 export default class SkillComponent extends React.Component {
   render () {
+    const { percents } = this.props;
     return (
       <section className="skill">
         <div className="container">
@@ -12,29 +13,29 @@ export default class SkillComponent extends React.Component {
             <div className="technical__info">
               <label>wordpress</label>
               <div className="progressbar progresssbar--wordpress">
-                <div className="active"></div>
-                <div className="button">85%</div>
+                <div className="active" style={{width: `${percents.wordpress}%`}}></div>
+                <div className="button">{percents.wordpress}%</div>
               </div>
             </div>
             <div className="technical__info">
               <label>photoshop</label>
               <div className="progressbar progresssbar--photoshop">
-                <div className="active"></div>
-                <div className="button">99%</div>
+                <div className="active" style={{width: `${percents.photoshop}%`}}></div>
+                <div className="button">{percents.photoshop}%</div>
               </div>
             </div>
             <div className="technical__info">
               <label>html &amp; css</label>
               <div className="progressbar progresssbar--html">
-                <div className="active"></div>
-                <div className="button">75%</div>
+                <div className="active" style={{width: `${percents.html}%`}}></div>
+                <div className="button">{percents.html}%</div>
               </div>
             </div>
             <div className="technical__info">
               <label>javascript</label>
               <div className="progressbar progresssbar--javascript">
-                <div className="active"></div>
-                <div className="button">67%</div>
+                <div className="active" style={{width: `${percents.javascript}%`}}></div>
+                <div className="button">{percents.javascript}%</div>
               </div>
             </div>
           </div>

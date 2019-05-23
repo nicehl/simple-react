@@ -1,15 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 
 import HeaderComponent from '../components/header';
+import { togglePlugBtn } from '../store/actions';
 
 class HeaderContainer extends React.Component {
   render () {
-    const { location } = this.props;
+    const { location, togglePlugBtn } = this.props;
     return (
-      <HeaderComponent location={location} />
+      <HeaderComponent location={location} togglePlugBtn={togglePlugBtn} />
     );
   }
 }
 
-export default withRouter(HeaderContainer);
+const mapDispatchToProps = {
+  togglePlugBtn
+};
+
+export default withRouter(connect(null, mapDispatchToProps)(HeaderContainer));
